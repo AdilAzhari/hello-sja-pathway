@@ -1,0 +1,27 @@
+{
+  "name": "sjapathway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:html": "htmlhint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdilAzhari/Hello.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdilAzhari/Hello/issues"
+  },
+  "homepage": "https://github.com/AdilAzhari/Hello#readme",
+  "description": "",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
