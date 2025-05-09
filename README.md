@@ -77,7 +77,7 @@ To get a local copy up and running, follow these simple steps.
 Clone this repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hello-sja-pathway.git
+git clone https://github.com/AdilAzhari/hello-sja-pathway.git
 cd hello-sja-pathway
 ````
 
