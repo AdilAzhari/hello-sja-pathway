@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-length": "long",
+    "color-no-invalid-hex": true,
+    "no-descending-specificity": null,
+    "media-feature-range-notation": "context"
+  }
+}
