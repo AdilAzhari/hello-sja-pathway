@@ -111,8 +111,8 @@ You can deploy this project using GitHub Pages, Netlify, or Vercel.
 ## 👥 Authors
 
 👤 **Your Full Name**
-GitHub: [@yourusername](https://github.com/yourusername)
-LinkedIn: \[Your LinkedIn URL]
+GitHub: [@AdilOmer](https://github.com/AdilAzhari)
+LinkedIn: \www.linkedin.com/in/adil-omer-8aab21167
 
 ---
 
