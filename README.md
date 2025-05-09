@@ -128,7 +128,7 @@ LinkedIn: \www.linkedin.com/in/adil-omer-8aab21167
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/YOUR_USERNAME/hello-sja-pathway/issues).
+Feel free to check the [issues page](https://github.com/AdilAzhari/hello-sja-pathway/issues).
 
 ---
 
