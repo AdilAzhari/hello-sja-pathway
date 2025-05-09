@@ -4,7 +4,7 @@
 A minimal "Hello World" project demonstrating essential GitHub workflow concepts: version control, branching, pull
 requests, and professional project documentation.
 
-[hello-sja-pathway] is a beginner-level HTML and CSS project, completed as part of the SJA Pathway to reinforce software
+**Hello-sja-pathway** is a beginner-level HTML and CSS project, completed as part of the SJA Pathway to reinforce software
 engineering best practices.
 
 ---
