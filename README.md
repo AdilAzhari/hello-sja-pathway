@@ -1,9 +1,3 @@
-Brilliant — this is a solid and comprehensive template. I'll tailor it to your **"Hello SJA Pathway"** project while
-keeping it professional and concise, perfect for first impressions and code reviews.
-
----
-
-````markdown
 # 📖 Hello SJA Pathway
 
 A minimal "Hello World" project demonstrating essential GitHub workflow concepts: version control, branching, pull
@@ -154,11 +148,3 @@ Thanks to the SJA Pathway community and curriculum team for the structured guida
 This project is [MIT](./LICENSE) licensed.
 
 ````
-
-2. Commit it with:
-
-```bash
-git add README.md
-git commit -m "Add detailed README using SJA template"
-
-Once done, we’ll proceed with **Step 6: Push and open a pull request** — the final step before your code review. Ready?
