@@ -1,0 +1,316 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8"/>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--    <title>Welcome | SJA Pathway</title>-->
+<!--    <link rel="stylesheet" href="css/style.css"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <h1>Hello SJA Pathway!</h1>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li><a href="pages/about.html">About</a></li>-->
+<!--            <li><a href="pages/contact.html">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header>-->
+
+<!--<main>-->
+<!--    <section>-->
+<!--        <h2>Welcome to the Pathway</h2>-->
+<!--        <p>This project marks the beginning of your journey toward becoming a job-ready web developer.</p>-->
+<!--    </section>-->
+
+<!--    <div class="card">-->
+<!--        <h3>Resume Tips</h3>-->
+<!--        <p>Learn how to craft the perfect resume</p>-->
+<!--        <button class="cta-button">View Guide</button>-->
+<!--    </div>-->
+
+<!--    <div class="search-filters">-->
+<!--        <input type="text" placeholder="Job title..." id="jobSearch">-->
+<!--        <select id="jobType">-->
+<!--            <option>All Types</option>-->
+<!--            <option>Full-time</option>-->
+<!--            <option>Internship</option>-->
+<!--        </select>-->
+<!--    </div>-->
+
+<!--    <form id="contactForm">-->
+<!--        <div class="form-group">-->
+<!--            <label for="name">Name</label>-->
+<!--            <input type="text" id="name" required>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="email">Email</label>-->
+<!--            <input type="email" id="email" required>-->
+<!--        </div>-->
+<!--        <button type="submit" class="cta-button">Send Message</button>-->
+<!--    </form>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <p>&copy; 2025 SJA Pathway</p>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome | SJA Pathway</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        /* Additional inline CSS for quick enhancements */
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --dark: #1e293b;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary);
+        }
+
+        /* New Features */
+        .job-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .testimonial {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        /* Dark mode toggle */
+        .dark-mode {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hello SJA Pathway!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Dark Mode</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="card">
+            <h2>Welcome to the Pathway</h2>
+            <p>This project marks the beginning of your journey toward becoming a job-ready web developer.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3><i class="fas fa-file-alt"></i> Resume Builder</h3>
+            <p>Create professional resumes with our easy-to-use templates.</p>
+            <button class="cta-button">View Templates</button>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-briefcase"></i> Job Search</h3>
+            <div class="search-filters">
+                <input type="text" placeholder="Job title..." id="jobSearch">
+                <select id="jobType">
+                    <option>All Types</option>
+                    <option>Full-time</option>
+                    <option>Internship</option>
+                    <option>Remote</option>
+                </select>
+                <button class="cta-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-board">
+        <h2>Featured Jobs</h2>
+        <div class="job-card">
+            <h3>Frontend Developer</h3>
+            <p><i class="fas fa-building"></i> TechCorp</p>
+            <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+            <button class="cta-button">Apply Now</button>
+        </div>
+        <div class="job-card">
+            <h3>UX Designer</h3>
+            <p><i class="fas fa-building"></i> DesignHub</p>
+            <p><i class="fas fa-map-marker-alt"></i> New York</p>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="card">
+            <h2>Success Stories</h2>
+            <div class="testimonial">
+                <p>"The SJA Pathway helped me land my dream job at Google!"</p>
+                <p>- Sarah, Frontend Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-preview">
+        <div class="card">
+            <h2>Ready to Begin?</h2>
+            <p>Contact us for more information about our programs.</p>
+            <a href="pages/contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SJA Pathway. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+<script>
+    // Dark mode toggle functionality
+    document.getElementById('themeToggle').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.toggle('dark-mode');
+
+        const icon = this.querySelector('i');
+        if (document.body.classList.contains('dark-mode')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+            this.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+            this.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+        }
+    });
+
+    // Simple form validation
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        const email = document.getElementById('email').value;
+        if (!email.includes('@')) {
+            e.preventDefault();
+            alert('Please enter a valid email address');
+        }
+    });
+</script>
+</body>
+</html>
