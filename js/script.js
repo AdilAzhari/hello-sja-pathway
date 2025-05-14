@@ -44,3 +44,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Enhanced Form Validation
+function initFormValidation() {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            let isValid = true;
+
+            // Validate required fields
+            form.querySelectorAll('[required]').forEach(field => {
+                const formGroup = field.closest('.form-group');
+
+                if (!field.value.trim()) {
+                    formGroup.classList.add('error');
+                    isValid = false;
+                } else {
+                    formGroup.classList.remove('error');
+
+                    // Special email validation
+                    if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+                        formGroup.classList.add('error');
+                        isValid = false;
+                    }
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+                form.querySelector('.error input, .error select, .error textarea').focus();
+            }
+        });
+
+        // Real-time validation
+        form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('input', () => {
+                const formGroup = field.closest('.form-group');
+                if (field.value.trim()) {
+                    formGroup.classList.remove('error');
+                }
+            });
+        });
+    });
+}
+
+// Initialize when DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+    initFormValidation();
+    // ... (previous dark mode code)
+});

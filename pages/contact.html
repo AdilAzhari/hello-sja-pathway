@@ -21,36 +21,70 @@
 
 <main class="container">
     <section class="contact-section">
-        <div class="card">
-            <h2>Get in Touch</h2>
-            <form id="contactForm" action="#" method="POST">
+        <div class="card card-featured">
+            <div class="card-header">
+                <h2 class="card-title">Contact Form</h2>
+                <i class="fas fa-envelope card-icon"></i>
+            </div>
+
+            <form id="contactForm" class="form-grid">
                 <div class="form-group">
-                    <label for="name"><i class="fas fa-user"></i> Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <span class="error-message">Please enter your name</span>
                 </div>
 
                 <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-at input-icon"></i>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <span class="error-message">Please enter a valid email</span>
                 </div>
 
                 <div class="form-group">
-                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
-                    <select id="subject" name="subject">
-                        <option value="general">General Inquiry</option>
-                        <option value="admissions">Admissions</option>
-                        <option value="technical">Technical Support</option>
-                    </select>
+                    <label for="phone">Phone Number</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="message"><i class="fas fa-comment"></i> Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="subject">Subject</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-tag input-icon"></i>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="admissions">Admissions</option>
+                            <option value="support">Technical Support</option>
+                        </select>
+                    </div>
                 </div>
 
-                <button type="submit" class="cta-button">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </button>
+                <div class="form-group" style="grid-column: 1 / -1">
+                    <label for="message">Your Message</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-comment input-icon" style="top: 1.5rem"></i>
+                        <textarea id="message" name="message" placeholder="Type your message here..."
+                                  required></textarea>
+                    </div>
+                    <span class="error-message">Please enter your message</span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
             </form>
         </div>
 
