@@ -1,45 +1,45 @@
 header {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
 }
 
 nav {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 800px;
-    margin: 1rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
-    color: var(--dark);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 nav a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
+@media (width <= 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
