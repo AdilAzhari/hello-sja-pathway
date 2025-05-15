@@ -71,6 +71,12 @@ nav a {
   transition: color 0.3s;
 }
 
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
 nav a:hover {
   color: var(--primary);
 }
@@ -135,12 +141,6 @@ footer {
   text-align: center;
   padding: 2rem 0;
   margin-top: 3rem;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.2rem;
 }
 
 .search-filters {
