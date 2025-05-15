@@ -2,14 +2,6 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "color-hex-length": "short",
-    "selector-class-pattern": null,
-    "selector-pseudo-class-no-unknown": [
-      true,
-      {
-        "ignorePseudoClasses": [
-          "global"
-        ]
-      }
-    ]
+    "selector-class-pattern": null
   }
 }

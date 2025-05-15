@@ -1,6 +1,17 @@
 {
   "devDependencies": {
-    "stylelint-config-standard": "^38.0.0",
-    "stylelint-stylistic": "^0.4.5"
+    "hint": "^7.1.13",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint \"**/*.{css,scss}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss}\" --fix",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "prepare": "husky install",
+    "test": "npm run lint:css && npm run lint:html"
   }
 }
