@@ -171,3 +171,62 @@ footer {
     flex-direction: column;
   }
 }
+
+.form-full-width {
+  grid-column: 1 / -1;
+}
+
+.textarea-icon {
+  top: 1.5rem !important;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Card Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Full width card variant */
+.full-width-card {
+  grid-column: 1 / -1;
+}
+
+/* Testimonial card specific styles */
+.card-testimonial {
+  background: var(--light);
+  position: relative;
+  padding: 2rem 2rem 2rem 3rem;
+  border-left: 4px solid var(--accent);
+}
+
+.dark-mode .card-testimonial {
+  background: #334155;
+}
+
+.card-testimonial::before {
+  content: "\201C";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 4rem;
+  color: rgba(67, 97, 238, 0.1);
+  font-family: serif;
+  line-height: 1;
+}
+
+.full-width {
+  width: 100%;
+  grid-column: 1 / -1;
+}
