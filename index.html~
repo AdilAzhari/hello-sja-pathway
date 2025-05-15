@@ -6,6 +6,136 @@
     <title>Welcome | SJA Pathway</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --dark: #1e293b;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0;
+        }
+
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary);
+        }
+
+        /* New Features */
+        .job-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        /* Dark mode toggle */
+        .dark-mode {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -25,7 +155,7 @@
         <div class="card">
             <h2>Welcome to the Pathway</h2>
             <p>This project marks the beginning of your journey toward becoming a job-ready web developer.</p>
-            <button type="button" class="cta-button">Get Started</button>
+            <button class="cta-button">Get Started</button>
         </div>
     </section>
 
@@ -33,21 +163,21 @@
         <div class="card">
             <h3><i class="fas fa-file-alt"></i> Resume Builder</h3>
             <p>Create professional resumes with our easy-to-use templates.</p>
-            <button type="button" class="cta-button">View Templates</button>
+            <button class="cta-button">View Templates</button>
         </div>
 
         <div class="card">
             <h3><i class="fas fa-briefcase"></i> Job Search</h3>
-            <form id="jobSearchForm" class="search-filters">
-                <input type="text" placeholder="Job title..." id="jobSearch" name="jobSearch">
-                <select id="jobType" name="jobType">
+            <div class="search-filters">
+                <input type="text" placeholder="Job title..." id="jobSearch">
+                <select id="jobType">
                     <option>All Types</option>
                     <option>Full-time</option>
                     <option>Internship</option>
                     <option>Remote</option>
                 </select>
-                <button type="submit" class="cta-button">Search</button>
-            </form>
+                <button class="cta-button" type="button">Search</button>
+            </div>
         </div>
     </section>
 
@@ -104,14 +234,10 @@
         const icon = this.querySelector('i');
         if (document.body.classList.contains('dark-mode')) {
             icon.classList.replace('fa-moon', 'fa-sun');
-            this.innerHTML = '';
-            this.appendChild(icon);
-            this.appendChild(document.createTextNode(' Light Mode'));
+            this.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
         } else {
             icon.classList.replace('fa-sun', 'fa-moon');
-            this.innerHTML = '';
-            this.appendChild(icon);
-            this.appendChild(document.createTextNode(' Dark Mode'));
+            this.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
         }
     });
 

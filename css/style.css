@@ -20,7 +20,9 @@ body {
   color: var(--dark);
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  contain: layout size style;
+  transform: translateZ(0);
 }
 
 body.dark-mode {
@@ -33,10 +35,117 @@ body.dark-mode {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+  contain: content;
 }
 
 section {
   padding: 3rem 0;
+  contain: content;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transform: translateZ(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, box-shadow;
+  contain: layout size style;
+}
+
+.card:hover {
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
+  will-change: background-color;
+  contain: paint;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary);
+}
+
+.job-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  contain: layout size style;
+  transform: translateZ(0);
+}
+
+.job-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  contain: content;
+}
+
+.testimonial {
+  font-style: italic;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin: 2rem 0;
+  contain: content;
 }
 
 footer {
@@ -47,10 +156,18 @@ footer {
   margin-top: 3rem;
 }
 
-.social-links a {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.2rem;
+.search-filters {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  contain: content;
+}
+
+.search-filters input,
+.search-filters select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
 @media (width <= 768px) {
@@ -58,4 +175,88 @@ footer {
     width: 95%;
     padding: 1rem;
   }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-filters {
+    flex-direction: column;
+    contain: content;
+  }
+}
+
+.form-full-width {
+  grid-column: 1 / -1;
+}
+
+.textarea-icon {
+  top: 1.5rem !important;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  will-change: transform;
+}
+
+/* Card Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  contain: content;
+}
+
+/* Full width card variant */
+.full-width-card {
+  grid-column: 1 / -1;
+}
+
+/* Testimonial card specific styles */
+.card-testimonial {
+  background: var(--light);
+  position: relative;
+  padding: 2rem 2rem 2rem 3rem;
+  border-left: 4px solid var(--accent);
+  contain: content;
+}
+
+.dark-mode .card-testimonial {
+  background: #334155;
+}
+
+.card-testimonial::before {
+  content: "\201C";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 4rem;
+  color: rgba(67, 97, 238, 0.1);
+  font-family: serif;
+  line-height: 1;
+  will-change: transform;
+}
+
+.full-width {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+/* Dark mode toggle button */
+#themeToggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+  contain: content;
+  will-change: contents;
 }
