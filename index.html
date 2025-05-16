@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome | SJA Pathway</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+<header>
+    <h1>Hello SJA Pathway!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Dark Mode</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="card">
+            <h2>Welcome to the Pathway</h2>
+            <p>This project marks the beginning of your journey toward becoming a job-ready web developer.</p>
+            <button type="button" class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3><i class="fas fa-file-alt"></i> Resume Builder</h3>
+            <p>Create professional resumes with our easy-to-use templates.</p>
+            <button type="button" class="cta-button">View Templates</button>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-briefcase"></i> Job Search</h3>
+            <form id="jobSearchForm" class="search-filters">
+                <input type="text" placeholder="Job title..." id="jobSearch" name="jobSearch">
+                <select id="jobType" name="jobType">
+                    <option>All Types</option>
+                    <option>Full-time</option>
+                    <option>Internship</option>
+                    <option>Remote</option>
+                </select>
+                <button type="submit" class="cta-button">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="job-board">
+        <h2>Featured Jobs</h2>
+        <div class="job-card">
+            <h3>Frontend Developer</h3>
+            <p><i class="fas fa-building"></i> TechCorp</p>
+            <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+            <button type="button" class="cta-button">Apply Now</button>
+        </div>
+        <div class="job-card">
+            <h3>UX Designer</h3>
+            <p><i class="fas fa-building"></i> DesignHub</p>
+            <p><i class="fas fa-map-marker-alt"></i> New York</p>
+            <button type="button" class="cta-button">Apply Now</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="card">
+            <h2>Success Stories</h2>
+            <div class="testimonial">
+                <p>"The SJA Pathway helped me land my dream job at Google!"</p>
+                <p>- Sarah, Frontend Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-preview">
+        <div class="card">
+            <h2>Ready to Begin?</h2>
+            <p>Contact us for more information about our programs.</p>
+            <a href="pages/contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SJA Pathway. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+</body>
+<script src="js/script.js"></script>
+</html>

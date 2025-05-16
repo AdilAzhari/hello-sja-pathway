@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SJA Pathway</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Dark Mode</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="contact-section">
+        <div class="card card-featured">
+            <div class="card-header">
+                <h2 class="card-title">Contact Form</h2>
+                <i class="fas fa-envelope card-icon"></i>
+            </div>
+
+            <form id="contactForm" class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <span class="error-message">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-at input-icon"></i>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <span class="error-message">Please enter a valid email</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-tag input-icon"></i>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="admissions">Admissions</option>
+                            <option value="support">Technical Support</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group form-full-width">
+                    <label for="message">Your Message</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-comment input-icon textarea-icon"></i>
+                        <textarea id="message" name="message" placeholder="Type your message here..."
+                                  required></textarea>
+                    </div>
+                    <span class="error-message">Please enter your message</span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Developer Lane, Tech City</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SJA Pathway. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
