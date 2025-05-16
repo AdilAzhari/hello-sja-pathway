@@ -6,10 +6,6 @@
     <title>Welcome | SJA Pathway</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<<<<<<< HEAD
-=======
-    <link rel="stylesheet" href="css/style.css">
->>>>>>> e6d96b9a1792f0516e671ac39164f043320cadec
 </head>
 <body>
 <header>
@@ -98,35 +94,6 @@
         <a href="#"><i class="fab fa-github"></i></a>
     </div>
 </footer>
-
-<script>
-    // Dark mode toggle functionality
-    document.getElementById('themeToggle').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.toggle('dark-mode');
-
-        const icon = this.querySelector('i');
-        if (document.body.classList.contains('dark-mode')) {
-            icon.classList.replace('fa-moon', 'fa-sun');
-            this.innerHTML = '';
-            this.appendChild(icon);
-            this.appendChild(document.createTextNode(' Light Mode'));
-        } else {
-            icon.classList.replace('fa-sun', 'fa-moon');
-            this.innerHTML = '';
-            this.appendChild(icon);
-            this.appendChild(document.createTextNode(' Dark Mode'));
-        }
-    });
-
-    // Simple form validation
-    document.getElementById('contactForm')?.addEventListener('submit', function (e) {
-        const email = document.getElementById('email').value;
-        if (!email.includes('@')) {
-            e.preventDefault();
-            alert('Please enter a valid email address');
-        }
-    });
-</script>
 </body>
+<script src="js/script.js"></script>
 </html>

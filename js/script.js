@@ -1,5 +1,5 @@
 // Dark mode toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('themeToggle');
 
     // Load saved theme preference
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateToggleIcon(true);
     }
 
-    themeToggle.addEventListener('click', function(e) {
+    themeToggle.addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.toggle('dark-mode');
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             const email = document.getElementById('email').value;
             if (!email.includes('@')) {
                 e.preventDefault();
@@ -44,12 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
 // Enhanced Form Validation
 function initFormValidation() {
     const forms = document.querySelectorAll('form');
 
     forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             let isValid = true;
 
             // Validate required fields
@@ -89,7 +90,33 @@ function initFormValidation() {
 }
 
 // Initialize when DOM loads
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initFormValidation();
     // ... (previous dark mode code)
+});
+
+document.getElementById('themeToggle')?.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('dark-mode');
+
+    const icon = this.querySelector('i');
+    if (document.body.classList.contains('dark-mode')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+        this.innerHTML = '';
+        this.appendChild(icon);
+        this.appendChild(document.createTextNode(' Light Mode'));
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+        this.innerHTML = '';
+        this.appendChild(icon);
+        this.appendChild(document.createTextNode(' Dark Mode'));
+    }
+});
+
+document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+    const email = document.getElementById('email').value;
+    if (!email.includes('@')) {
+        e.preventDefault();
+        alert('Please enter a valid email address');
+    }
 });
