@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Elegant Careers</title>
+    <title>Contact Us | SJA Pathway!</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <a href="../index.html" class="logo">Elegant<span>Careers</span></a>
+        <a href="../index.html" class="logo">SJA <span>Pathway!</span></a>
         <nav class="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -61,7 +61,7 @@
                     <div class="icon"><i class="fas fa-envelope"></i></div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>info@elegantcareers.com<br>support@elegantcareers.com</p>
+                        <p>info@SJAPathway.com<br>support@SJAPathway.com</p>
                     </div>
                 </div>
                 <div class="social-links">
@@ -168,8 +168,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Our certificates are recognized by thousands of employers who specifically look for Elegant
-                        Careers graduates due to our rigorous, practical curriculum.
+                    <p>Our certificates are recognized by thousands of employers who specifically look for SJA Pathway!
+                        graduates due to our rigorous, practical curriculum.
                         Many of our courses are also
                         designed in partnership with industry leaders to ensure they teach the most relevant, in-demand
                         skills.</p>
@@ -197,7 +197,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>ElegantCareers</h3>
+                <h3>SJA Pathway!</h3>
                 <p>Elevating careers through elegant solutions and strategic guidance.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -229,11 +229,11 @@
                 <h3>Contact</h3>
                 <p><i class="fas fa-map-marker-alt"></i> 123 Career Lane, Suite 456</p>
                 <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                <p><i class="fas fa-envelope"></i> info@elegantcareers.com</p>
+                <p><i class="fas fa-envelope"></i> info@sjapathway.com</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 ElegantCareers. All rights reserved.</p>
+            <p>&copy; 2023 sjapathway. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>

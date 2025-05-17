@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses | SJA Pathway!</title>
+    <title>Courses | Elegant Careers</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <a href="../index.html" class="logo">SJA <span>Pathway!</span></a>
+        <a href="../index.html" class="logo">Elegant<span>Careers</span></a>
         <nav class="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -216,7 +216,7 @@
         <h2 class="section-title">Success Stories</h2>
         <div class="testimonial-slider">
             <div class="testimonial active">
-                <p>"SJA Pathway Careers helped me transition from retail to a fulfilling IT career in just 6 months!"</p>
+                <p>"Elegant Careers helped me transition from retail to a fulfilling IT career in just 6 months!"</p>
                 <div class="author">- Sarah Johnson</div>
             </div>
             <div class="testimonial">
@@ -249,7 +249,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>SJA Pathway!</h3>
-                <p>Elevating careers through SJA solutions and strategic guidance.</p>
+                <p>Elevating careers through elegant solutions and strategic guidance.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
