@@ -3,84 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | SJA Pathway</title>
+    <title>Elegant Careers | Home</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<header>
-    <h1>About SJA Pathway</h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Dark Mode</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="container">
+        <a href="../index.html" class="logo">Elegant<span>Careers</span></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-outline">Sign In</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
 </header>
 
-<main class="container">
-    <section class="about-section">
-        <div class="card">
-            <h2>Our Mission</h2>
-            <p>The SJA Pathway program is designed to transform aspiring developers into job-ready professionals
-                through:</p>
-            <ul class="feature-list">
-                <li><i class="fas fa-check-circle"></i> Project-based learning</li>
-                <li><i class="fas fa-check-circle"></i> Industry-relevant curriculum</li>
-                <li><i class="fas fa-check-circle"></i> Portfolio development</li>
-            </ul>
-        </div>
-
-        <div class="card-grid">
-            <div class="card card-team">
-                <img src="../images/team1.jpg" alt="John Doe" class="team-avatar">
-                <h3>John Doe</h3>
-                <p class="text-muted">Lead Instructor</p>
-                <p>10+ years of experience in web development</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                </div>
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="fade-in">Elevating Careers to New Heights</h1>
+            <p class="fade-in delay-1">We create elegant, functional, and memorable career paths that leave a lasting impression. Discover our thoughtful approach to job searching and professional development.</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="courses.html" class="btn btn-primary">Explore Our Work →</a>
+                <a href="about.html" class="btn btn-outline">Learn More</a>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="card card-team">
-                <img src="../images/team2.jpg" alt="Jane Smith" class="team-avatar">
-                <h3>Jane Smith</h3>
-                <p class="text-muted">Career Coach</p>
-                <p>Specializes in tech industry placements</p>
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose Elegant Careers?</h2>
+        <div class="features-grid">
+            <div class="feature-card slide-up">
+                <div class="icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Targeted Approach</h3>
+                <p>We help you identify and pursue the perfect career path tailored to your skills and aspirations.</p>
+            </div>
+            <div class="feature-card slide-up delay-1">
+                <div class="icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Industry Connections</h3>
+                <p>Access our network of professionals and companies to upstart your career.</p>
+            </div>
+            <div class="feature-card slide-up delay-2">
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Career Growth</h3>
+                <p>Continuous learning opportunities to ensure your professional development never stalls.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p>"Elegant Careers helped me transition from retail to a fulfilling IT career in just 6 months!"</p>
+                <div class="author">- Sarah Johnson</div>
+            </div>
+            <div class="testimonial">
+                <p>"The resources and guidance I received were instrumental in landing my dream job."</p>
+                <div class="author">- Michael Chen</div>
+            </div>
+            <div class="testimonial">
+                <p>"I doubled my salary within a year thanks to their career coaching and courses."</p>
+                <div class="author">- David Martinez</div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Transform Your Career?</h2>
+        <p>Join thousands of professionals who have found success with our guidance.</p>
+        <a href="#" class="btn btn-primary">Get Started Today</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ElegantCareers</h3>
+                <p>Elevating careers through elegant solutions and strategic guidance.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-
-            <div class="card card-testimonial full-width-card">
-                <blockquote>
-                    "The SJA Pathway completely transformed my career. Within 6 months I went from
-                    beginner to landing a frontend developer position at a major tech company."
-                </blockquote>
-                <div class="testimonial-author">
-                    <strong>Sarah Johnson</strong>
-                    <p class="text-muted">Frontend Developer @TechCorp</p>
-                </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Career Blog</a></li>
+                    <li><a href="#">Resume Templates</a></li>
+                    <li><a href="#">Interview Prep</a></li>
+                    <li><a href="#">Salary Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Career Lane, Suite 456</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@elegantcareers.com</p>
             </div>
         </div>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 SJA Pathway. All rights reserved.</p>
-    <div class="social-links">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ElegantCareers. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
     </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
 </body>
 </html>
