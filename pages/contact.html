@@ -3,110 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | SJA Pathway</title>
+    <title>Contact Us | Elegant Careers</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<header>
-    <h1>Contact Us</h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Dark Mode</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="container">
+        <a href="../index.html" class="logo">Elegant<span>Careers</span></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-outline">Sign In</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
 </header>
 
-<main class="container">
-    <section class="contact-section">
-        <div class="card card-featured">
-            <div class="card-header">
-                <h2 class="card-title">Contact Form</h2>
-                <i class="fas fa-envelope card-icon"></i>
+<section class="page-hero">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you! Reach out with questions, feedback, or partnership inquiries.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info slide-up">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>Our Office</h3>
+                        <p>123 Career Lane, Suite 456<br>San Francisco, CA 94107</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567<br>Mon-Fri, 9am-5pm PST</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@elegantcareers.com<br>support@elegantcareers.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-
-            <form id="contactForm" class="form-grid">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-user input-icon"></i>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <div class="contact-form slide-up delay-1">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user">
+                                <span class="tooltip">Your Name</span>
+                            </i>
+                        </label><input type="text" id="name" placeholder="Your Name" required>
                     </div>
-                    <span class="error-message">Please enter your name</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-at input-icon"></i>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope">
+                                <span class="tooltip">Your Email</span>
+                            </i>
+                        </label>
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </div>
-                    <span class="error-message">Please enter a valid email</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-phone input-icon"></i>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-tag input-icon"></i>
-                        <select id="subject" name="subject" required>
-                            <option value="" disabled selected>Select a subject</option>
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag">
+                                <span class="tooltip">Subject</span>
+                            </i>
+                        </label>
+                        <select id="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
                             <option value="general">General Inquiry</option>
-                            <option value="admissions">Admissions</option>
+                            <option value="courses">Course Information</option>
                             <option value="support">Technical Support</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="feedback">Feedback/Suggestions</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="form-group form-full-width">
-                    <label for="message">Your Message</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-comment input-icon textarea-icon"></i>
-                        <textarea id="message" name="message" placeholder="Type your message here..."
-                                  required></textarea>
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-pencil-alt">
+                                <span class="tooltip">Your Message</span>
+                            </i>
+                        </label><textarea id="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <span class="error-message">Please enter your message</span>
-                </div>
-
-                <div class="form-actions">
-                    <button type="reset" class="btn btn-secondary">
-                        <i class="fas fa-undo"></i> Reset
-                    </button>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </div>
-            </form>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="card contact-info">
-            <h2>Other Ways to Reach Us</h2>
-            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-            <p><i class="fas fa-map-marker-alt"></i> 123 Developer Lane, Tech City</p>
-            <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+            <div class="faq-item slide-up">
+                <button type="button" class="faq-question">
+                    How do I choose the right course for my career goals?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We recommend starting with our free career assessment tool, which will evaluate your skills,
+                        interests, and goals to suggest the most suitable courses.
+                        You can also schedule a free
+                        consultation with one of our career advisors who can provide personalized recommendations based
+                        on your specific situation.</p>
+                </div>
+            </div>
+            <div class="faq-item slide-up delay-1">
+                <button type="button" class="faq-question">
+                    Do you offer any free resources or trial courses?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes!
+                        We have a collection of free resources including resume templates, interview guides, and
+                        career planning worksheets available in our Resources section.
+                        Many of our paid courses also
+                        offer free introductory modules so you can preview the content before enrolling.</p>
+                </div>
+            </div>
+            <div class="faq-item slide-up delay-2">
+                <button type="button" class="faq-question">
+                    What kind of support is available after completing a course?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>All courses are self-paced, and graduates gain access to our graduate community where you can
+                        network with peers, get
+                        feedback on job applications, and continue learning through exclusive webinars.
+                        We also offer
+                        career coaching packages at discounted rates for our students to help with job search
+                        strategies, interview preparation, and salary negotiation.</p>
+                </div>
+            </div>
+            <div class="faq-item slide-up delay-3">
+                <button type="button" class="faq-question">
+                    Are your courses recognized by employers?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Our certificates are recognized by thousands of employers who specifically look for Elegant
+                        Careers graduates due to our rigorous, practical curriculum.
+                        Many of our courses are also
+                        designed in partnership with industry leaders to ensure they teach the most relevant, in-demand
+                        skills.</p>
+                </div>
+            </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
-<footer>
-    <p>&copy; 2025 SJA Pathway. All rights reserved.</p>
-    <div class="social-links">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+<section class="map-section">
+    <div class="container">
+        <div class="map-container slide-up">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.538442692283!2d-122.4194159243305!3d37.7749299718992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus"
+                    class="map-iframe"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ElegantCareers</h3>
+                <p>Elevating careers through elegant solutions and strategic guidance.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Career Blog</a></li>
+                    <li><a href="#">Resume Templates</a></li>
+                    <li><a href="#">Interview Prep</a></li>
+                    <li><a href="#">Salary Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Career Lane, Suite 456</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@elegantcareers.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ElegantCareers. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
     </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/animations.js"></script>
 </body>
 </html>
