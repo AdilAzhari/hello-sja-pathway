@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Elegant Careers</title>
+    <title>Courses | Elegant Careers</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,8 +15,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,116 +33,214 @@
 
 <section class="page-hero">
     <div class="container">
-        <h1>About Elegant Careers</h1>
-        <p>Our mission, vision, and the team behind your career success</p>
+        <h1>Professional Development Courses</h1>
+        <p>Elevate your skills and advance your career with our expert-led programs</p>
     </div>
 </section>
 
-<section class="about-section">
+<section class="course-categories">
     <div class="container">
-        <div class="about-content">
-            <div class="about-text slide-up">
-                <h2>Our Story</h2>
-                <p>Founded in 2015, Elegant Careers began as a small career counseling service with a big vision: to transform the way people approach their professional lives.</p>
-                <p>What started as a passion project has grown into a comprehensive career development platform serving thousands of clients worldwide.</p>
+        <h2 class="section-title">Explore by Category</h2>
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Courses</button>
+            <button class="tab-btn" data-category="career">Career Development</button>
+            <button class="tab-btn" data-category="tech">Technology</button>
+            <button class="tab-btn" data-category="business">Business</button>
+            <button class="tab-btn" data-category="creative">Creative</button>
+        </div>
+    </div>
+</section>
+
+<section class="courses-section">
+    <div class="container">
+        <div class="courses-grid">
+            <div class="course-card" data-category="career">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course1.avif" alt="Resume Mastery">
+                    <span class="category-tag">Career Development</span>
+                </div>
+                <div class="course-details">
+                    <h3>Resume & LinkedIn Mastery</h3>
+                    <p class="instructor">By Alex Johnson</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(248)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 12 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 4.5 Hours</span>
+                    </div>
+                    <div class="price">$49 <span class="original-price">$99</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
             </div>
-            <div class="about-image slide-up delay-1">
-                <img src="../assets/images/about-team/about-team.avif" alt="Our team working together">
+
+            <div class="course-card" data-category="tech">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course2.avif" alt="Data Science">
+                    <span class="category-tag">Technology</span>
+                </div>
+                <div class="course-details">
+                    <h3>Data Science Fundamentals</h3>
+                    <p class="instructor">By David Kim</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(187)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 24 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 8 Hours</span>
+                    </div>
+                    <div class="price">$79 <span class="original-price">$149</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="business">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course3.avif" alt="Business Communication">
+                    <span class="category-tag">Business</span>
+                </div>
+                <div class="course-details">
+                    <h3>Executive Communication</h3>
+                    <p class="instructor">By Maria Garcia</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(156)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 10 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 3 Hours</span>
+                    </div>
+                    <div class="price">$39 <span class="original-price">$79</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="creative">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course4.jpeg" alt="UX Design">
+                    <span class="category-tag">Creative</span>
+                </div>
+                <div class="course-details">
+                    <h3>UX Design Principles</h3>
+                    <p class="instructor">By Sarah Williams</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(203)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 18 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 6 Hours</span>
+                    </div>
+                    <div class="price">$59 <span class="original-price">$119</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="career">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course5.avif" alt="Interview Skills">
+                    <span class="category-tag">Career Development</span>
+                </div>
+                <div class="course-details">
+                    <h3>Ace Your Next Interview</h3>
+                    <p class="instructor">By Alex Johnson</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(321)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 8 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 2.5 Hours</span>
+                    </div>
+                    <div class="price">$29 <span class="original-price">$59</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="tech">
+                <div class="course-image">
+                    <img src="../assets/images/courses/course6.avif" alt="Web Development">
+                    <span class="category-tag">Technology</span>
+                </div>
+                <div class="course-details">
+                    <h3>Full-Stack Web Development</h3>
+                    <p class="instructor">By David Kim</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(412)</span>
+                    </div>
+                    <div class="course-meta">
+                        <span><i class="fas fa-video"></i> 36 Lessons</span>
+                        <span><i class="fas fa-clock"></i> 15 Hours</span>
+                    </div>
+                    <div class="price">$99 <span class="original-price">$199</span></div>
+                    <a href="#" class="btn btn-outline">View Course</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="mission-section">
+<section class="course-features">
     <div class="container">
-        <div class="mission-cards">
-            <div class="mission-card fade-in">
-                <div class="icon"><i class="fas fa-eye"></i></div>
-                <h3>Our Vision</h3>
-                <p>To create a world where everyone has access to meaningful, fulfilling careers that align with their skills and values.</p>
+        <h2 class="section-title">Why Our Courses Stand Out</h2>
+        <div class="features-grid">
+            <div class="feature-card slide-up">
+                <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with real-world experience.</p>
             </div>
-            <div class="mission-card fade-in delay-1">
-                <div class="icon"><i class="fas fa-bullseye"></i></div>
-                <h3>Our Mission</h3>
-                <p>To provide elegant, effective career solutions that bridge the gap between talent and opportunity.</p>
+            <div class="feature-card slide-up delay-1">
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Hands-On Projects</h3>
+                <p>Apply what you learn with practical, portfolio-worthy projects.</p>
             </div>
-            <div class="mission-card fade-in delay-2">
-                <div class="icon"><i class="fas fa-heart"></i></div>
-                <h3>Our Values</h3>
-                <p>Integrity, innovation, and impact drive everything we do to serve our community.</p>
+            <div class="feature-card slide-up delay-2">
+                <div class="icon"><i class="fas fa-certificate"></i></div>
+                <h3>Career Certificates</h3>
+                <p>Earn certificates to showcase your new skills to employers.</p>
+            </div>
+            <div class="feature-card slide-up delay-3">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <h3>Community Support</h3>
+                <p>Join a network of peers and mentors for guidance.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="team-section">
+<section class="testimonials">
     <div class="container">
-        <h2 class="section-title">Meet Our Team</h2>
-        <div class="team-grid">
-            <div class="team-member slide-up">
-                <div class="member-image">
-                    <img src="../assets/images/team/team1.jpeg" alt="Alex Johnson">
-                </div>
-                <h3>Alex Johnson</h3>
-                <p class="position">Founder & CEO</p>
-                <p class="bio">15+ years in career development and human resources.</p>
+        <h2 class="section-title">Success Stories</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p>"Elegant Careers helped me transition from retail to a fulfilling IT career in just 6 months!"</p>
+                <div class="author">- Sarah Johnson</div>
             </div>
-            <div class="team-member slide-up delay-1">
-                <div class="member-image">
-                    <img src="../assets/images/team/team2.jpeg" alt="Maria Garcia">
-                </div>
-                <h3>Maria Garcia</h3>
-                <p class="position">Director of Coaching</p>
-                <p class="bio">Specializes in career transitions and executive coaching.</p>
+            <div class="testimonial">
+                <p>"The resources and guidance I received were instrumental in landing my dream job."</p>
+                <div class="author">- Michael Chen</div>
             </div>
-            <div class="team-member slide-up delay-2">
-                <div class="member-image">
-                    <img src="../assets/images/team/team3.jpeg" alt="David Kim">
-                </div>
-                <h3>David Kim</h3>
-                <p class="position">Learning Architect</p>
-                <p class="bio">Designs our cutting-edge professional development courses.</p>
-            </div>
-            <div class="team-member slide-up delay-3">
-                <div class="member-image">
-                    <img src="../assets/images/team/team4.jpeg" alt="Sarah Williams">
-                </div>
-                <h3>Sarah Williams</h3>
-                <p class="position">Partnership Manager</p>
-                <p class="bio">Connects our clients with top employers in their fields.</p>
+            <div class="testimonial">
+                <p>"I doubled my salary within a year thanks to their career coaching and courses."</p>
+                <div class="author">- David Martinez</div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="stats-section">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat fade-in">
-                <div class="number" data-count="5000">0</div>
-                <div class="label">Clients Served</div>
-            </div>
-            <div class="stat fade-in delay-1">
-                <div class="number" data-count="95">0</div>
-                <div class="label">Success Rate</div>
-            </div>
-            <div class="stat fade-in delay-2">
-                <div class="number" data-count="120">0</div>
-                <div class="label">Industry Partners</div>
-            </div>
-            <div class="stat fade-in delay-3">
-                <div class="number" data-count="50">0</div>
-                <div class="label">Countries Reached</div>
-            </div>
+        <div class="slider-controls">
+            <button type="button" class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button type="button" class="slider-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
 </section>
 
 <section class="cta">
     <div class="container">
-        <h2>Ready to Start Your Journey?</h2>
-        <p>Join our community of professionals transforming their careers.</p>
-        <a href="#" class="btn btn-primary">Get Started Today</a>
+        <h2>Start Learning Today</h2>
+        <p>Invest in your future with our career-transforming courses.</p>
+        <a href="#" class="btn btn-primary">Browse All Courses</a>
     </div>
 </section>
 
