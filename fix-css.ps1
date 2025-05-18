@@ -48,20 +48,7 @@ function Balance-CurlyBraces {
 
 $cssFiles = @(
     "css/animations.css",
-    "css/base.css",
     "css/style.css",
-    "css/utilities.css",
-    "css/components/buttons.css",
-    "css/components/cards.css",
-    "css/components/course-card.css",
-    "css/components/dashboard.css",
-    "css/components/forms.css",
-    "css/components/hero.css",
-    "css/components/navigation.css",
-    "css/components/team.css",
-    "css/components/testimonial.css",
-    "css/layouts/footer.css",
-    "css/layouts/grid.css"
 )
 
 foreach ($file in $cssFiles) {

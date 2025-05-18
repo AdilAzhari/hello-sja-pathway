@@ -8,7 +8,7 @@ mobileMenuBtn.addEventListener('click', () => {
         '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
 });
 
-// Close mobile menu when clicking on a link
+// Close the mobile menu when clicking on a link
 const navLinks = document.querySelectorAll('.navbar a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -161,7 +161,7 @@ contactForm.addEventListener('submit', (e) => {
     const message = document.getElementById('message').value;
 
     // Here you would typically send the data to a server
-    console.log({ name, email, subject, message });
+    console.log({name, email, subject, message});
 
     // Show success message
     alert('Thank you for your message! We will get back to you soon.');
@@ -187,7 +187,10 @@ function animateOnScroll() {
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
-// Counter Animation
+
+// Only animate counters when they come into view
+const statsSection = document.querySelector('.stats-section');
+
 function animateCounters() {
     const counters = document.querySelectorAll('.number');
     const speed = 200;
@@ -206,8 +209,6 @@ function animateCounters() {
     });
 }
 
-// Only animate counters when they come into view
-const statsSection = document.querySelector('.stats-section');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -215,7 +216,7 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.5 });
+}, {threshold: 0.5});
 
 if (statsSection) {
     observer.observe(statsSection);
@@ -245,7 +246,7 @@ resTabBtns.forEach(btn => {
         const resource = btn.dataset.resource;
         let categoryId;
 
-        switch(resource) {
+        switch (resource) {
             case 'all':
                 categoryId = 'all-resources';
                 break;
@@ -276,7 +277,7 @@ resTabBtns.forEach(btn => {
     });
 });
 
-// Show all resources by default on page load
+// Show all resources by default on a page load
 document.addEventListener('DOMContentLoaded', () => {
     showResourceCategory('all-resources');
 });

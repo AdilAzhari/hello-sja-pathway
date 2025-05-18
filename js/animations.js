@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.classList.add('float');
     });
 
-    // Animate numbers in stats section
+    // Animate numbers in a stats section
     const statsSection = document.querySelector('.stats-section');
     if (statsSection) {
         const observer = new IntersectionObserver((entries) => {
@@ -70,26 +70,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.5 });
+        }, {threshold: 0.5});
 
         observer.observe(statsSection);
     }
 
-    function animateCounters() {
-        const counters = document.querySelectorAll('.number');
-        const speed = 200;
 
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-count');
-            const count = +counter.innerText;
-            const increment = target / speed;
+});
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(animateCounters, 1);
-            } else {
-                counter.innerText = target;
-            }
-        });
-    }
+// Use IntersectionObserver to only trigger animations when visible
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    });
+});
+
+document.querySelectorAll('[data-animate]').forEach(el => {
+    observer.observe(el);
 });

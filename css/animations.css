@@ -1,10 +1,23 @@
-/* Animation Classes */
+[class*="animate-"],
+.animate {
+  will-change: opacity, transform;
+}
+
+/*
+ * Fade In Animation
+ */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
   animation: fadeIn 1s ease forwards;
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation delay classes */
 .delay-1 {
   animation-delay: 0.3s;
 }
@@ -17,13 +30,9 @@
   animation-delay: 0.9s;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/*
+ * Slide Up Animation
+ */
 .slide-up {
   opacity: 0;
   transform: translateY(50px);
@@ -37,6 +46,9 @@
   }
 }
 
+/*
+ * Slide Left Animation
+ */
 .slide-left {
   opacity: 0;
   transform: translateX(50px);
@@ -50,6 +62,10 @@
   }
 }
 
+/*
+ * Slide Right Animation
+ * Simplified transform to 2D version
+ */
 .slide-right {
   opacity: 0;
   transform: translateX(-50px);
@@ -63,6 +79,9 @@
   }
 }
 
+/*
+ * Zoom In Animation
+ */
 .zoom-in {
   opacity: 0;
   transform: scale(0.8);
@@ -76,6 +95,9 @@
   }
 }
 
+/*
+ * Rotate In Animation
+ */
 .rotate-in {
   opacity: 0;
   transform: rotate(-10deg);
@@ -85,54 +107,102 @@
 @keyframes rotateIn {
   to {
     opacity: 1;
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 
+/*
+ * Pulse Animation
+ */
 .pulse {
-  animation: pulse 2s infinite;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
   }
 
   50% {
     transform: scale(1.05);
   }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
+/*
+ * Float Animation
+ */
 .float {
   animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% {
+  0%,
+  100% {
     transform: translateY(0);
   }
 
   50% {
     transform: translateY(-10px);
   }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
-/* Scroll Animation */
+/*
+ * Scroll Animation
+ */
 [data-animate] {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 1s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 [data-animate].animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+/*
+ * Progress Bar Animation
+ */
+.progress-bar-animate {
+  animation: progressBarAnimation 2s forwards;
+}
+
+@keyframes progressBarAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*
+ * Spin Animation
+ */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+ * Respects user preference for reduced motion
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
