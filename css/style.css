@@ -1364,3 +1364,7 @@ img {
   transform: translateX(-100%);
   animation: progressBarAnimation 2s forwards;
 }
+
+.scan-overview__progress-bar.end-animation {
+  width: 100%;
+}
